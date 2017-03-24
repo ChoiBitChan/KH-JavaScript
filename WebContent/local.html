@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <SCRIPT>
+  var scope = "전역변수";
+  function checkscope(){
+	var scope="지역변수";
+	document.write(scope);
+  }
+  checkscope();
+  document.write("<br>");
+  document.write(scope);
+  </SCRIPT>
+</head>
+ <body> </body></html>

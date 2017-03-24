@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script>
+    	
+    	// 실행 순서가 중요
+    
+        function onLoadDoc() {
+        	alert("<head> 실행");
+            alert("문서가 로드되었습니다.");
+            document.body.style.backgroundColor = "red";
+        }
+    	
+    </script>
+</head>
+<body onload="onLoadDoc();">
+	
+	<script>
+	alert("<body> 실행");
+	</script>
+	
+</body>
+</html>

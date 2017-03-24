@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+	<script>
+		function change(rad) {
+			document.bgColor = rad.value;
+		}	
+	</script>
+	
+</head>
+<body>
+	<form>
+		<input type = "radio" name = "color" value = "white" onClick = "change(this)">흰색<br>
+		<input type = "radio" name = "color" value = "black" onClick = "change(this)">검은색<br>
+		<input type = "radio" name = "color" value = "green" onClick = "change(this)" checked>녹색<br>
+		<input type = "radio" name = "color" value = "blue" onClick = "change(this)">파란색<p>
+	</form>
+
+</body>
+</html>

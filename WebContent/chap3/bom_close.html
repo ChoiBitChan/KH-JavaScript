@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>값 넘겨주기</title>
+<script>
+
+	function parsing(){
+	opener.document.getElementById("target").innerHTML
+	= document.forms[0].text1.value;
+
+	self.close();
+	return true;
+	}
+
+</script>
+</head>
+<body>
+
+	<form onsubmit="parsing()">
+		<input type="text" name="text1">
+		<input type="button" value="값 보내기" 
+		onclick="parsing()">
+	</form>
+
+</body>
+</html>

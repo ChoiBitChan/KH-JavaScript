@@ -1,0 +1,22 @@
+<!DOCTYPE >
+<html>
+
+<head>
+    <script>
+        function process() {
+            var obj1 = document.myform.text1;
+            alert(obj1.value);
+            
+            var obj2 = document.forms[0].elements[1];
+            alert(obj2.value);
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <input type="text" id="target" name="text1">
+        <input type="text" id="target" name="text2">
+        <input type="submit" value="submit" onclick="process()">
+    </form>
+</body>
+</html>

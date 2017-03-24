@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script>
+		function selectCom(form) {
+			var str = "선택 : ";
+			for(i = 0; i < form.com.length; i++) {
+				if(form.com.options[i].selected == true){
+					str += form.com.options[i].text + "\n";	
+				}
+			}
+			alert(str);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<h1>컴퓨터 선택</h1><p>
+		<select name = "com" size = "5" multiple>
+			<option value = "XT" selected>XT 컴퓨터
+			<option value = "AT">AT 컴퓨터
+			<option value = "386">386 컴퓨터
+			<option value = "486">486 컴퓨터
+			<option value = "펜티엄">펜티엄 컴퓨터
+		</select><p>
+		<input type = "button" value = "선택결과" onClick = "selectCom(this.form)">
+	</form>
+</body>
+</html>

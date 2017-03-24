@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <SCRIPT>
+  var scope = "global";
+  function f(){
+	alert(scope);
+	var scope="local";
+	alert(scope);
+  }
+  
+ f();
+  </script>
+ </head>
+
+ <body>
+  
+ </body>
+</html>

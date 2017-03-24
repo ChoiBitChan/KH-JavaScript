@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+	<script>
+		function clickCheck(box) {
+			if(box.checked == true)
+				alert(box.value + "드라이브를 체크했습니다.")
+			else {
+				alert(box.value + "드라이브를 해체했습니다.")
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<H1>드라이브 선택</H1>
+		<input type = "checkbox" name = "drivea" value = "A" onClick = "clickCheck(this)">A드라이브<br>
+		<input type = "checkbox" name = "driveb" value = "B" onClick = "clickCheck(this)">B드라이브<br>
+		<input type = "checkbox" name = "drivec" value = "C" onClick = "clickCheck(this)">C드라이브<br>
+		<input type = "checkbox" name = "drived" value = "D" onClick = "clickCheck(this)">D드라이브<br>
+	</form>
+</body>
+</html>

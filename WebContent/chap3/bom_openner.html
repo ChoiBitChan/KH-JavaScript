@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	
+	var win;
+	function openWin(){
+ 	win = open('bom_close.html',
+		'_blank', 'width=500, height=300');
+	}
+	function closeWin(){
+		win.close();
+	}
+
+</script>
+</head>
+<body>
+	<form>
+	<input type="button" 
+	value="창 열기" onclick="openWin()">
+	<input type="button" 
+	value="창 닫기" onclick="closeWin()">
+	
+	<div id="target"></div>
+</form>
+</body>
+</html>
+
+
+
+
+
+

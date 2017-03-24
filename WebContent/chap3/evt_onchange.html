@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function Upper() {
+        var x = document.getElementById("name1");
+        x.value = x.value.toUpperCase();
+    }
+    function Lower() {
+        var y = document.getElementById("name2");
+        y.value = y.value.toLowerCase();
+    }
+</script>
+</head>
+<body>
+영어단어: <input type="text" id="name1" onchange="Upper()">
+<p>입력필드를 벗어나면 대문자로 변경됩니다.</p>
+영어단어: <input type="text" id="name2" onchange="Lower()">
+<p>입력필드를 벗어나면 소문자로 변경됩니다.</p>
+</body>
+</html>

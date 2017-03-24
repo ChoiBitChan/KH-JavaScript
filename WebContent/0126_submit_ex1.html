@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+	<script>
+		function beforeSubmit() {
+			document.myform.elements[0].value = "";
+			return confirm("데이터를 정말로 보낼까요?");
+		}
+		function checkSubmit() {
+			beforeSubmit();
+			if (beforeSubmit == true) {
+				alert("전송 완료");
+			} else {
+				alert("전송 실패");
+			}
+		}
+	</script>
+	
+</head>
+<body>
+
+	<form name = "myform" onSubmit = "return checkSubmit()">
+	이름 : <input type = "text" name = "irum">
+	<input type = "submit">
+	</form>		
+
+</body>
+</html>

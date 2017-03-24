@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+	<script>
+		function findSelected(form) {
+			for(var i = 0; i < form.drive.length; i ++) {
+				if(form.drive[i].checked == true) {
+					alert(form.drive[i].value + " 드라이브가 선택되었습니다.");
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<form>
+	<h1>드라이브 선택</h1><p>
+		<input type = "radio" name = "drive" value = "A" checked>A 드라이브<br>
+		<input type = "radio" name = "drive" value = "B">B 드라이브<br>
+		<input type = "radio" name = "drive" value = "C">C 드라이브<br>
+		<input type = "radio" name = "drive" value = "D">D 드라이브<br>
+		<input type = "button" value = "Check" onClick = "findSelected(this.form)">
+	</form>
+</body>
+</html>

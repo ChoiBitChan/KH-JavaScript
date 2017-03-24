@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script>
+		function findChecked(form) {
+			var str ="";
+			if(form.drivea.checked == true)
+				str += "A 드라이브를 선택했습니다. \n"
+			if(form.driveb.checked == true)
+				str += "B 드라이브를 선택했습니다. \n"
+			if(form.drivec.checked == true)
+				str += "C 드라이브를 선택했습니다. \n"
+			if(form.drived.checked == true)
+				str += "D 드라이브를 선택했습니다. \n"
+			alert(str);
+		}
+	</script>
+</head>
+<body>
+	<H1>드라이브 선택</H1><p>
+	<form>
+		<input type = "checkbox" name = "drivea" value = "A_Drive">A드라이브<br>
+		<input type = "checkbox" name = "driveb" value = "B_Drive">B드라이브<br>
+		<input type = "checkbox" name = "drivec" value = "C_Drive">C드라이브<br>
+		<input type = "checkbox" name = "drived" value = "D_Drive">D드라이브<p>
+		<input type = "button" value = "Check" onClick = "findChecked(this.form)">
+	</form>
+</body>
+</html>
